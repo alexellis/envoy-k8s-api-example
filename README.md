@@ -2,7 +2,11 @@ WIP example
 
 Goal:
 
-Load balance port 6443 against a dynamic list of upstream servers using a file for endpoint discovery.
+Load balance port 6443 (the K8s/K3s API server) against a dynamic list of upstream servers using a file for endpoint discovery.
+
+* Dynamic configuration
+* Load balancing port 6443 between a list of endpoints
+* TCP Proxy only (`type.googleapis.com/envoy.extensions.filters.network.tcp_proxy.v3.TcpProxy`) - not HTTP/TLS
 
 Commands to test:
 
