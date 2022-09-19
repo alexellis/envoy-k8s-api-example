@@ -1,11 +1,15 @@
 node:
   cluster: k3s_service
   id: k3s_service
+
 dynamic_resources:
   lds_config:
-    path: "./lds.conf"
+    path_config_source:
+      path: "./lds.yaml"
   cds_config:
-    path: "./cds.conf"
+    path_config_source:
+      path: "./cds.yaml"
+
 admin:
   access_log_path: "/dev/null"
   address:

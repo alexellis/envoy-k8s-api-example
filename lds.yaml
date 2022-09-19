@@ -1,4 +1,3 @@
-version_info: '0'
 resources:
 - "@type": type.googleapis.com/envoy.config.listener.v3.Listener
   name: k3s_service
