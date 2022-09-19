@@ -1,0 +1,14 @@
+node:
+  cluster: k3s_service
+  id: k3s_service
+dynamic_resources:
+  lds_config:
+    path: "./lds.conf"
+  cds_config:
+    path: "./cds.conf"
+admin:
+  access_log_path: "/dev/null"
+  address:
+    socket_address:
+      address: 0.0.0.0
+      port_value: 10000
